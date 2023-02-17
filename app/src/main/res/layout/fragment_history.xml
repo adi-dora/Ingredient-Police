@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/noSearches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="35sp"
+            android:fontFamily="sans-serif-black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:textColor="@color/black"
+            android:textSize="@android:dimen/notification_large_icon_height"
+            android:fontFamily="sans-serif-black"
+            android:text="History"
+            android:paddingBottom="20dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/history"
+            android:paddingBottom="50sp"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/rect"
+        android:layout_gravity="bottom"
+        />
+    <LinearLayout
+        android:layout_gravity="end|bottom"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/h_history_fragment"
+            android:background="@drawable/history_active"
+            android:layout_marginStart="60sp"
+            android:layout_marginEnd="50sp"
+            android:paddingEnd="400dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:paddingStart="50sp"
+            android:paddingEnd="50sp"
+            android:layout_height="50dp"
+            android:id="@+id/h_camera_fragment"
+            android:background="@drawable/camera"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/h_search_fragment"
+            android:background="@drawable/search"
+            android:layout_marginStart="60sp"
+            android:layout_marginEnd="70sp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

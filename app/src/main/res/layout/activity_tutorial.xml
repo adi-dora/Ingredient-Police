@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tutorial"
+    android:background="@drawable/gradient_animated_green"
+    tools:context=".TutorialActivity">
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/tutorialPager"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/close_black"/>
+
+    <FrameLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dot_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dotsColor="@color/white"
+                android:layout_centerHorizontal="true"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="20dp"
+                app:dotsSpacing="10dp"
+                app:dotsWidthFactor="2.5"
+                app:selectedDotColor="@color/black"
+                app:progressMode="true"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
