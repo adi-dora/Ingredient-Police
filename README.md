@@ -4,7 +4,7 @@
 Ingredient Police is a mobile app for Android that uses **Optical Character Recognition** and **Web Scraping** to enable users to better understand the nutritional drawbacks of foods they eat. Built in Java, Ingredient Police provides intuitive usability and versatility to enable the user to get the most out of the app. 
 
 <figure>
-  <img src="https://github.com/Allton274/iHearU/blob/main/app/src/main/res/drawable/ihearu_logo.png"/>
+  <img src="https://github.com/adi-dora/Ingredient-Police/blob/main/ingredient-police-logo.jpg"/>
 </figure>
 
 # Value
