@@ -8,16 +8,17 @@ Ingredient Police is a mobile app for Android that uses **Optical Character Reco
 </figure>
 
 # Value
-What makes this app so great is that it even works when the phone is __asleep/out of focus of the app__. Leveraging the [**PocketSphinx**](https://pypi.org/project/pocketsphinx/) API by Carnegie Mellon researchers, iHearU is able to parse sound passively and trigger when it hears the set keyword.
+What makes this app so great and unique is that its universality. There exist apps already that utilize US FDA bar codes to deliver the harmful effects of foods. But, this has a weakness: __International foods are not covered by this method__. So, **Ingredient Police takes a picture of the actual ingredient label and parses that to provide a better solution.** Leveraging the [**Cloud Vision**](https://cloud.google.com/vision/docs/ocr) API by Google, Ingredient Police is able to decipher and provide feedback on the ingredients within the ingredient label, a much more powerful methodology.
 
 # Purpose
-The main goal of this app is to allow users a chance to call for help without notifying an assailant of their intent. For example, if the keyword they have set is "please don't hurt me", the app would send a message to emergency contacts the user selected and notify them there might be a problem. All the while, the assailant would assume the user was talking to them.
+The main goal of this app is to allow users to better understand the harmful effects embedded in the foods they eat without the constraint of requiring FDA-based barcodes. By using the actual ingredient label, Ingredient Police is able to bypass this constraint and provide more quality results.
 
 # Configurability
 
-- The user is able to add, remove and edit their emergency contacts through the app itself.
-- The user is able to set the keyword/phrase they want the app to trigger on to their needs, enabling greater usability.
-- The user is able to enable/disable listening at any time with the click of a button, allowing them to manage the data that the app accesses.
+- The user is able to utilize the OCR functionality within the app itself
+- There is a search functionality embedded in the app, which allows the user to search for a food product if they don't have it on hand
+- There is a history feature built into the app that provides the user with a historu of the foods they have scanned and searched.
+- There is an intuitive tutorial and guide provided to the user to better understand the app
 
 # Demonstration
-*Coming soon!*
+https://youtu.be/9k56gMmtTak
